@@ -23,6 +23,7 @@
 </head>
 <body>
     <header class="p-12">
+        <!-- Nav Section -->
         <div class="navbar bg-base-100 bg-[#F85559] rounded-full">
             <div class="navbar-start lg:w-0">
               <div class="dropdown">
@@ -34,7 +35,7 @@
                   <li><a>About Us</a></li>
                   <li><a>Shop</a></li>
                   <li><a>All Fruits</a></li>
-                  <div class="relative">
+                  <div class="">
                     <input class=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search here" type="text" name="search"/>
                     <i class="fa-solid fa-magnifying-glass text-[#121212] ml-30"></i>
                   </div>
@@ -57,14 +58,123 @@
             <a class="btn btn-ghost normal-case text-xl text-white mr-44">Fruit Burst</a>
             </div>
             <div class="">
-              <input class=" placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search here" type="text" name="search"/>
-              <i class="fa-solid fa-magnifying-glass text-[#121212] -ml-8"></i>
+              <input class= "hidden placeholder:text-slate-400 md:block bg-white w-full border border-slate-300 rounded-full py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" placeholder="Search here" type="text" name="search"/>
+              <i class="fa-solid fa-magnifying-glass text-[#121212] -ml-8 hidden md:block"></i>
             </div>
         
           </div>
+          <!-- Banner Section -->
+          <div class="carousel w-full mt-8">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./images/banner1.png" class="w-full" />
+                <div class="absolute p-4 lg:p-16 w-full items-center md:space-y-3 lg:space-y-4">
+                    <h2 class="text-[#FFF] text-center lg:text-4xl font-lato font-black">Exotic tastes at your <br> doorstep</h2>
+                    <p class="text-center text-[#FFF] text-xs lg:text-xl font-lato font-normal">We supply highly quality organic products</p>
+                    <button class="btn btn-error bg-[#F85559] text-white ml-20  md:ml-64 lg:ml-[29rem]">Shop Now</button>
+                    
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5    right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div> 
+            
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./images/banner2.png" class="w-full" />
+              <div class="absolute p-4 lg:p-16 w-full items-center md:space-y-3 lg:space-y-4">
+                <h2 class="text-[#FFF] text-center lg:text-4xl font-lato font-black">Exotic tastes at your <br> doorstep</h2>
+                <p class="text-center text-[#FFF] text-xs lg:text-xl font-lato font-normal">We supply highly quality organic products</p>
+                <button class="btn btn-error bg-[#F85559] text-white ml-20  md:ml-64 lg:ml-[29rem]">Shop Now</button>
+                
+            </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="./images/banner3.png" class="w-full" />
+              <div class="absolute p-4 lg:p-16 w-full items-center md:space-y-3 lg:space-y-4">
+                <h2 class="text-[#FFF] text-center lg:text-4xl font-lato font-black">Exotic tastes at your <br> doorstep</h2>
+                <p class="text-center text-[#FFF] text-xs lg:text-xl font-lato font-normal">We supply highly quality organic products</p>
+                <button class="btn btn-error bg-[#F85559] text-white ml-20  md:ml-64 lg:ml-[29rem]">Shop Now</button>
+                
+            </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="./images/banner4.png" class="w-full" />
+              <div class="absolute p-4 lg:p-16 w-full items-center md:space-y-3 lg:space-y-4">
+                <h2 class="text-[#FFF] text-center lg:text-4xl font-lato font-black">Exotic tastes at your <br> doorstep</h2>
+                <p class="text-center text-[#FFF] text-xs lg:text-xl font-lato font-normal">We supply highly quality organic products</p>
+                <button class="btn btn-error bg-[#F85559] text-white ml-20  md:ml-64 lg:ml-[29rem]">Shop Now</button>
+                
+            </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <!-- Banner part-2 -->
+          <div  class="hidden lg:grid lg:grid-cols-5 lg:mx-28 lg:bg-[#FFF] lg:drop-shadow-2xl lg:p-8 lg:items-center lg:-my-36">
+            <div>
+                <img class=""  src="./images/fruit1.png" alt="">
+                <p class="text-center">Strawberry</p>
+            </div>
+            <div>
+                <img class="w-[7rem]" src="./images/fruit2.png" alt="">
+                <p class="text-center">Orange</p>
+            </div>
+            <div>
+                <img src="./images/fruit3.png" alt="">
+                <p class="text-center">Mango</p>
+            </div>
+            <div>
+                <img src="./images/fruit4.png" alt="">
+                <p class="text-center">Strawberry</p>
+            </div>
+            <div>
+                <img  src="./images/fruit5.png" alt="">
+                <p class="text-center">Mango</p>
+            </div>
+          </div>
     </header>
-    <main>
+    <main class="p-12">
+        <!-- Deal of the day Section -->
+        <section class="mt-28">
+            <div>
+                <div class="space-y-4">
+                    <h1 class="text-[#121212] font-lato font-black text-5xl">Deal of the day</h1>
+                    <p class="text-[#121212] font-lato font-medium texst-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex gap-16">
+                    <div>
+                        <h1 class="text-center text-[#121212] font-lato font-black text-3xl">29<span class="text-sm ml-6">:</span> </h1>
+                        <p>Days</p> 
 
+                    </div>
+                    <div>
+                        <h1>15<span>:</span></h1>
+                        <p>Hours</p> 
+
+                    </div>
+                    <div>
+                        <h1>25<span>:</span></h1>
+                        <p>Minutes</p> 
+
+                    </div>
+                    <div>
+                        <h1>08</h1>
+                        <p>Seconds</p> 
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
